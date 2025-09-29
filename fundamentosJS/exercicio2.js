@@ -1,4 +1,4 @@
-let idade = 75;
+let idade = 25;
 
 if (idade <12){
     console.log('Criança')
@@ -18,7 +18,7 @@ if (numero % 2 === 0) {
   console.log(numero + " é ímpar.");
 }
 
-let hoje = 1;
+let hoje = 2;
 
 switch (hoje) {
     case 1: 
@@ -55,3 +55,33 @@ while (contador <= 15) {
     soma += contador;
     contador++;
 } console.log("Soma de 1 a 10: " + soma);
+
+//tabuada do número 7
+let num = 7;
+
+console.log('Tabuada do ' + num + ':');
+for(let i =1; i<=10; i++){
+    console.log(num + ' x ' + i + ' = ' + (num * i));
+}
+
+let somaPares = 0;
+let n = 1;
+while(n<=20){
+    if(n % 2 === 0){
+        somaPares += n;
+    }
+    n++;
+}
+console.log('Soma dos pares de 1 a 20: ' + somaPares);
+
+// Tente adivinhar o número secreto de 1 a 10
+let numeroSecreto = 4;
+let palpite = 6; // altere esse valor para testar
+
+if (palpite === numeroSecreto) {
+  console.log("Parabéns, você acertou!");
+} else if (palpite < numeroSecreto) {
+  console.log("O número secreto é maior que " + palpite);
+} else {
+  console.log("O número secreto é menor que " + palpite);
+}
